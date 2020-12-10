@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RidedetailsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Widget.AppCompat.PopupMenu.Overflow" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:background="@drawable/outline"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l1"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+
+            android:text="Destination"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvdestination"
+            android:textColor="@android:color/black"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="address"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvvdestination"
+            android:textColor="@android:color/black">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+
+            android:text="Distance"
+            android:textColor="@android:color/black"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="km"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"
+            android:id="@+id/tvvdistance"
+            android:textColor="@android:color/black"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+
+            android:text="Estimated Price"
+            android:textColor="@android:color/black"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:id="@+id/tvvestimatedprice"
+            android:textColor="@android:color/black"
+            ></TextView>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:id="@+id/btnMap"
+        android:text="Map"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+
+        android:background="@drawable/background_btn"
+        android:textColor="@android:color/black"></Button>
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnMap"
+        android:id="@+id/btnConfirm"
+        android:text="Confirm"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/background_btn"></Button>
+</RelativeLayout>

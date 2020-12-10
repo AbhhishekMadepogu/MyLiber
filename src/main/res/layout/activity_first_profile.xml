@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstProfileActivity">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/ivpersonfirst"
+        android:src="@drawable/ic_baseline_person_24"        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Change profile Picture"
+        android:layout_below="@id/ivpersonfirst"
+        android:gravity="center"
+        android:layout_marginLeft="140dp"
+        android:id="@+id/tvchangefirst"
+        android:textStyle="bold"></TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@+id/tvchangefirst"
+        android:id="@+id/tlemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/ivpersonfirst"
+            android:hint="Enter your Email id"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/edtemailfirst"
+            ></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tlemail">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/ivpersonfirst"
+            android:hint="Enter your Full Name "
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/edtnamefirst"
+            ></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSaveprofilefirst"
+        android:layout_below="@+id/tlname"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/background_btn"
+        android:text="Save Details"></Button>
+</RelativeLayout>

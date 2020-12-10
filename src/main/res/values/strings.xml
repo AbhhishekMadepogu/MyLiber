@@ -1,0 +1,9 @@
+<resources>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="app_name"> LIBER
+        </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="google_map_key">AIzaSyDzPiMQO0YGCarnG3xmSl3H9g_uIBvqGC0</string>
+</resources>
